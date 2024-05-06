@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task main.css">
+</head>
+<body>
+    <body>
+      <div class="container">
+        <h1>Registration Form</h1>
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" >
+            
+          </div> 
+          <div class="form-group">
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number"  >
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"   >
+          </div>
+          <div class="form-group">
+            <label>Gender:</label>
+            <div class="form-group1">
+            
+            <input type="radio" id="male" name="gender" value="male"  >
+            <label for="male" class="Gender">Male</label>
+            <input type="radio" id="female" name="gender" value="female"  >
+            <label for="female" class="Gender">Female</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country"  >
+              <option value="">Select Country</option>
+              <option value="INDIA">INDIA</option>
+              <option value="AUS">AUS</option>
+              <option value="USA">USA</option>
+              <option value="PAK">PAK</option>
+
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state"  >
+          </div>
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"  >
+          </div>
+          <div class="form-group">
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode"  >
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit" onclick="settolocal()">
+          </div>
+        </form>
+      </div>
+      <script src="task main1.js"></script>
+    <!-- <Script >
+        let Name = document.getElementById('name');
+        let number = document.getElementById('number');
+        let email = document.getElementById('email');
+         let Gender ;
+        let country = document.getElementById('country');
+        let state = document.getElementById('state');
+        let city = document.getElementById('city');
+        let pincode = document.getElementById('pincode');
+
+        let formobj={
+Name:Name.value,
+Number:number.value,
+email:email.value,
+// Gender:document.querySelector('input[name="gender"]:checked'),
+country:country.value,
+state:state.value,
+pincode:pincode.value,
+            }
+        let localarray=[];
+        function settolocal(){
+            
+            
+            console.log(formobj);
+            localarray.push(formobj);
+            localStorage.setItem('user',JSON.stringify(localarray));
+            console.log("helloww");
+         }
+        
+        
+        
+        
+        
+        
+        
+        </Script> -->
+</body>
+</html>
+<!-- 
+name number email male female country state city pincode
+
+<select name="States" id="States">
+    <optgroup label="India">
+       <option value="Uttar Pradesh">Uttar Pradesh</option>
+       <option value="Maharashtra">Maharashtra</option>
+       <option value="Bihar">Bihar</option>
+       <option value="West Bengal">West Bengal</option>
+       <option value="Madhya Pradesh">Madhya Pradesh</option>
+       <option value="Tamil Nadu">Tamil Nadu</option>
+
+    </optgroup>
+    <optgroup label="Australia">
+       <option value="New South Wales">New South Wales</option>
+       <option value="Victoria">Victoria</option>
+       <option value="Queensland">Queensland</option>
+       <option value="Western Australia">Western Australia</option>
+       <option value="South Australia">South Australia</option>
+       <option value="Tasmania">Tasmania</option>
+
+    </optgroup>
+    <optgroup label="Canada">
+       <option value="Ontario">Ontario</option>
+       <option value="Quebec">Quebec</option>
+       <option value="Alberta">Alberta</option>
+       <option value="Manitoba">Manitoba</option>
+       <option value="Saskatchewan">Saskatchewan</option>
+    </optgroup>
+    <optgroup label="Brazil">
+       <option value="São Paulo">São Paulo</option>
+       <option value="Minas Gerais">Minas Gerais</option>
+       <option value="Rio de Janeiro">Rio de Janeiro</option>
+       <option value="Bahia">Bahia</option>
+       <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+       <option value="Paraná">Paraná</option>
+
+    </optgroup>
+    <optgroup label="Nigeria">
+       <option value="Lagos">Lagos</option>
+       <option value="Kano">Kano</option>
+       <option value="Kaduna">Kaduna</option>
+       <option value="Rivers">Rivers</option>
+       <option value="Oyo">Oyo</option>
+       <option value="Delta">Delta</option>
+
+    </optgroup>
+    <select name="Cities" id="Cities">
+       <optgroup>
+       </optgroup>
+    </select> -->
